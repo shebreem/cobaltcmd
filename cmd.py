@@ -56,6 +56,10 @@ def process_command():
         location_data = get_location_from_ip(ip_address)
         if location_data:
             print(f"Location for {ip_address}: {location_data['city']}, {location_data['regionName']}, {location_data['country']}")
+    elif "weather" in command:
+        countrynshi = str(input("what place are you in mate: "))
+        awdas = ("curl wttr.in" + "/" + countrynshi)
+        os.system(awdas)
     elif "pick" in command:
     # Get a list of items from the user
         items_input = input("Enter a list of items separated by commas: ")
