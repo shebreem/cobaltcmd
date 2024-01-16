@@ -1,10 +1,12 @@
- # Cobalt Labs Terminal
+ # Cobaltcmd
 
 ## Overview
 The Cobalt Labs Terminal is a command-line tool that allows users to perform various tasks, such as:
 - Retrieving the IP address of a website
 - Determining the location of an IP address
-- Selecting a random item from a list
+- Find the weather in your general area
+-  Selecting a random item from a list
+- A exit function
 
 ## Installation
 To install the Cobalt Labs Terminal, simply clone the repository and run the `install.sh` script:
