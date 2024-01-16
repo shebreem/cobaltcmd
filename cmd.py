@@ -18,6 +18,7 @@ text_to_print = """
 print(text_to_print)
 print("Welcome to the cobalt terminal")
 
+
 def get_location_from_ip(ip_address):
     try:
         response = requests.get(f"http://ip-api.com/json/{ip_address}")
@@ -35,7 +36,30 @@ def get_ip_address(website):
     except Exception as e:
         print(f"Error occurred: {e}")
         return None
-
+def list_time_zones():
+    print("""
+        Samoa: -11
+        Hawaii: -10
+        Alaska: -9
+        Pacific Time (US & Canada): -8
+        Mountain Time (US & Canada): -7
+        Central Time (US & Canada): -6
+        Eastern Time (US & Canada): -5
+        Brasilia: -3
+        Greenland: -3
+        Cape Verde: -1
+        Azores: -1
+        England: 0
+        GMT (Greenwich Mean Time): 0
+        Western European Time: 0
+        Central European Time: +1
+        Eastern European Time: +2
+        Moscow Time: +3
+        Iran Time: +3:30
+        India Standard Time: +5:30
+        Japan Standard Time: +9
+        Australian Eastern Time: +10
+        New Zealand Standard Time: +12""")
 def run_command(command):
     try:
         os.system(command)
@@ -73,6 +97,8 @@ def process_command():
             print("The list is empty. Please enter some items.")
         except Exception as e:
             print(f"An error occurred: {e}")
+    elif "timezones" in command:
+        list_time_zones()
     elif "yo" in command or "hello" in command:
         print("Hello! How can I help you?")
     elif "exit" in command:
