@@ -22,7 +22,7 @@ $$       |$$    $$/ $$    $$/ $$    $$ |$$ |  $$  $$/       $$    $$// $$   |
                                                                                                   
 """
 
-print(text_3)
+print(text_to_print)
 print("Welcome to the cobalt terminal")
 
 
